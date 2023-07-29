@@ -1,0 +1,90 @@
+
+.message-container {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+
+.message-left {
+  width: fit-content;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 1rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-sizing: content-box;
+  transition: all .5s ease-in;
+  animation: .5s messageAnim;
+}
+
+.message-right {
+  width: fit-content;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 1rem;
+  align-self: flex-end;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: var(--primary);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-sizing: content-box;
+  color: var(--white-color);
+  transition: all .5s ease-in;
+  animation: .5s messageAnim;
+}
+
+.message {
+  margin: .5em 0em .3em 0em;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  font-size: medium;
+  font-weight: 500;
+  font-family: var(--font-family)
+}
+
+.time {
+  margin: 0rem;
+  font-size: small;
+  font-style: italic;
+}
+
+.time-message-left {
+  color: var(--border-right-color);
+  align-self: flex-start;
+}
+
+.time-message-right {
+  align-self: flex-end;
+}
+
+.message-date-container {
+  width: fit-content;
+  padding: .3rem 1.4rem;
+  align-self: center;
+  border-radius: 1rem;
+  background-color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 0px;
+}
+
+.message-date {
+  font-weight: 400;
+  letter-spacing: .1rem;
+  font-family: var(--font-family);
+  color: var(--border-color);
+}
+
+@keyframes messageAnim {
+  from {
+    transform: translateY(.1em);
+  }
+  to {
+    transform: translateY(0em);
+  }
+}

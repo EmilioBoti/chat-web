@@ -1,0 +1,15 @@
+.btn-add-friend {
+    width: 25%;
+    height: 1.5rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    border: 0rem solid var(--primary);
+    color: var(--white-color);
+    transition: .2s all ease-in-out;
+}
+
+.btn-add-friend:hover {
+    cursor: pointer;
+    background-color: var(--outline);
+    box-shadow: var(--box-shadow);
+}
